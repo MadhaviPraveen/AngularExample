@@ -1,0 +1,26 @@
+npm install -g @angular/cli
+ng new angular-tour-of-heroes
+cd angular-tour-of-heroes
+ng serve --open
+app.ts ==> title="tour of heroes";
+app.html==> {{title}}
+ng geneate component heroes
+app.heroes.ts ==> hero="windstorm";
+heroes.html ==> {{hero}}
+app.html==> <h1>{{title}}</h1>
+<app-heroes></app-heroes>
+hero.ts==>
+export class Hero{
+name: string;
+id: number;}
+heroes.ts ==>
+export class HeroesComponent implements OnInit(){
+hero:Hero = {
+	name:'Windstorm',
+	id:1
+};
+}
+heroes.html
+<h2>{{hero.name}} Details</h2>
+
+
